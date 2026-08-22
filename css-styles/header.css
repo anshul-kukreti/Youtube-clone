@@ -1,0 +1,195 @@
+.header {
+  height: 55px;
+  display: flex;
+
+  flex-direction: row;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  
+  left: 0;
+  right: 0;
+  
+  background-color: white;
+  border-bottom-width: 1px;
+  
+  border-bottom-style: solid;
+  border-bottom-color: rgb(228, 228, 228);
+  
+  z-index: 1;
+  margin-bottom: 20px;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.middle-section {
+  display: flex;
+  align-items: center;
+  
+  flex: 1;
+  margin-left: 70px;
+  
+  margin-right: 75px;
+  max-width: 550px;
+}
+
+.right-section {
+  width: 250px;
+  display: flex;
+  
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.hamburger {
+  height: 24px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.yt-logo {
+  height: 20px;
+}
+
+.searchbox {
+  height: 36px;
+  width: 0;
+  
+  font-size: 15px;
+  flex: 1;
+  
+  margin-left: 78px;
+  padding: 1px 2px 1px 12px;
+  
+  border: 1px solid rgb(192, 192, 192);
+  border-radius: 2px;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05)
+}
+
+.searchbox::placeholder {
+  font-family: roboto, arial;
+  font-size: 16px;
+}
+
+.lens {
+  height: 24px;
+}
+
+.lenss {
+  height: 40px;
+  background-color: rgb(240, 240, 240);
+  
+  width: 65px;
+  margin: -1px;
+  
+  margin-right: 8px;
+  border: 1px solid rgb(192, 192, 192);
+}
+
+.mic {
+  height: 24px;
+  width: 24px;
+}
+
+.mics {
+  background-color: rgb(247, 247, 247);
+  height: 38px;
+  
+  width: 38px;
+  border-radius: 19px;
+  border: none;
+}
+
+.create {
+  height: 24px;
+  width: 24px;
+  margin-left: 45px;
+}
+
+
+.yt-apps {
+  height: 24px;
+  width: 24px;
+}
+
+.bell {
+  height: 24px;
+  width: 24px;
+}
+
+.my-channel {
+  height: 45px;
+
+  border-radius: 50%;
+  margin-right: 24px;
+}
+
+.noti {
+  position: relative;
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+}
+
+.count {
+  position: absolute;
+  top: -2px;
+  
+  right: -5px;
+  background-color: rgb(200, 0, 0);
+  
+  color: white;
+  font-size: 12px;
+  
+  padding: 1px 5px 1px 5px;
+  border-radius: 50%;
+}
+
+.tooltip {
+  position: absolute;
+  font-size: 12px;
+
+  background-color: gray;
+  color: white;
+  
+  padding: 4px 8px 4px 8px;
+  border-radius: 2px;
+  
+  bottom: -30px;
+  opacity: 0;
+  
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.lenss:hover .tooltip,
+.mics:hover .tooltip,
+.upload-icon:hover .tooltip,
+.yticon:hover .tooltip,
+.noti:hover .tooltip {
+  opacity: 1;
+}
+
+.lenss,
+.mics,
+.upload-icon,
+.yticon,
+.noti {
+  position: relative;
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+}
+
+.upload-icon .tooltip {
+  right: -10px;
+}
