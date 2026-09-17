@@ -11,6 +11,10 @@ A responsive YouTube homepage clone built with HTML and CSS, featuring a structu
 - Clean and structured UI
 - Built using pure HTML and CSS
 
+  ## 🖼️ Preview
+
+![YouTube Clone Preview](youtube-preview.png)
+
 🛠️ Technologies Used
 
 - HTML5
